@@ -1,3 +1,14 @@
+[![Actions Status](https://github.com/Hakky54/laleler/workflows/Build/badge.svg)](https://github.com/Hakky54/laleler/actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=io.github.hakky54%3Alaleler&metric=alert_status)](https://sonarcloud.io/dashboard?id=io.github.hakky54%3Alaleler)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=io.github.hakky54%3Alaleler&metric=coverage)](https://sonarcloud.io/dashboard?id=io.github.hakky54%3Alaleler)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=io.github.hakky54%3Alaleler&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=io.github.hakky54%3Alaleler)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=io.github.hakky54%3Alaleler&metric=security_rating)](https://sonarcloud.io/dashboard?id=io.github.hakky54%3Alaleler)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=io.github.hakky54%3Alaleler&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=io.github.hakky54%3Alaleler)
+[![Apache2 license](https://img.shields.io/badge/license-Aache2.0-blue.svg)](https://github.com/Hakky54/laleler/blob/master/LICENSE)
+[![Maven Central](https://maven-badges.sml.io/sonatype-central/io.github.hakky54/laleler/badge.svg?style=flat&subject=Sonatype%20Central&color=blue)](https://central.sonatype.com/artifact/io.github.hakky54/laleler)
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=io.github.hakky54%3Alaleler)
+
 # Laleler 🌷
 
 # Install library with:
