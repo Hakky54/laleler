@@ -38,6 +38,3 @@ If you can, please consider sponsoring Laleler. Even a small donation would help
 If you are an industry user of Laleler and want to make sure it can keep growing and being maintained, please reach out!
 
 In any case, please star it on GitHub and share the word about it!
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHakky54%2Flaleler.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FHakky54%2Flaleler?ref=badge_large)
