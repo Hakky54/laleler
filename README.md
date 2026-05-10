@@ -35,7 +35,7 @@ implementation 'io.github.hakky54:laleler:1.0.0'
 Collection of Java utilities to simplify basic tasks such as input validation, extracting properties and remapping streams.
 
 # History
-Lalaler project is originated from internal utilities of [Ayza](https://github.com/hakky54/ayza) project. It is extracted to a separate project to be used by other projects as well.
+Laleler project is originated from internal utilities of [Ayza](https://github.com/hakky54/ayza) project. It is extracted to a separate project to be used by other projects as well.
 
 # Usage
 
