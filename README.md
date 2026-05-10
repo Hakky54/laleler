@@ -1,7 +1,7 @@
 # Laleler 🌷
 
 # Install library with:
-### Install with [maven](https://mvnrepository.com/artifact/io.github.hakky54/sude)
+### Install with [maven](https://mvnrepository.com/artifact/io.github.hakky54/laleler)
 ```xml
 <dependency>
     <groupId>io.github.hakky54</groupId>
@@ -40,4 +40,4 @@ If you are an industry user of Laleler and want to make sure it can keep growing
 In any case, please star it on GitHub and share the word about it!
 
 ## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHakky54%2Fsude.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FHakky54%2Fsude?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHakky54%2Flaleler.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FHakky54%2Flaleler?ref=badge_large)
