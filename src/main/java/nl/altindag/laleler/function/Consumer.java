@@ -15,6 +15,9 @@
  */
 package nl.altindag.laleler.function;
 
+/**
+ * @author Hakan Altindag
+ */
 @FunctionalInterface
 public interface Consumer<T> {
     void accept(T t) throws Exception;

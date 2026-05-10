@@ -15,6 +15,9 @@
  */
 package nl.altindag.laleler.exception;
 
+/**
+ * @author Hakan Altindag
+ */
 public class LaleException extends RuntimeException {
 
     public LaleException(Exception e) {

@@ -15,6 +15,9 @@
  */
 package nl.altindag.laleler.exception;
 
+/**
+ * @author Hakan Altindag
+ */
 public class GenericIOException extends LaleException{
 
     public GenericIOException(Exception e) {

@@ -34,9 +34,6 @@ import static nl.altindag.laleler.ValidationUtils.GENERIC_EXCEPTION_MESSAGE;
 import static nl.altindag.laleler.ValidationUtils.requireNotNull;
 
 /**
- * <strong>NOTE:</strong>
- * Please don't use this class directly as it is part of the internal API. Class name and methods can be changed any time.
- *
  * @author Hakan Altindag
  */
 public final class IOUtils {
