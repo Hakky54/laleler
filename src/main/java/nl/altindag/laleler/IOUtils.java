@@ -28,6 +28,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import static nl.altindag.laleler.ValidationUtils.GENERIC_EXCEPTION_MESSAGE;
@@ -41,17 +42,25 @@ public final class IOUtils {
     private IOUtils() {}
 
     public static String getContent(InputStream inputStream) {
+        return getContent(inputStream, GenericIOException::new);
+    }
+
+    public static String getContent(InputStream inputStream, Function<Exception, ? extends RuntimeException> exceptionHandler) {
         try (InputStreamReader inputStreamReader = new InputStreamReader(requireNotNull(inputStream, GENERIC_EXCEPTION_MESSAGE.apply("InputStream")), StandardCharsets.UTF_8);
              BufferedReader bufferedReader = new BufferedReader(inputStreamReader)) {
 
             return bufferedReader.lines()
                     .collect(Collectors.joining(System.lineSeparator()));
         } catch (Exception e) {
-            throw new GenericIOException(e);
+            throw exceptionHandler.apply(e);
         }
     }
 
     public static byte[] copyToByteArray(InputStream inputStream) {
+        return copyToByteArray(inputStream, GenericIOException::new);
+    }
+
+    public static byte[] copyToByteArray(InputStream inputStream, Function<Exception, ? extends RuntimeException> exceptionHandler) {
         try(ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
             byte[] buffer = new byte[1024];
             int length;
@@ -61,7 +70,7 @@ public final class IOUtils {
             outputStream.flush();
             return outputStream.toByteArray();
         } catch (Exception e) {
-            throw new GenericIOException(e);
+            throw exceptionHandler.apply(e);
         }
     }
 
@@ -78,30 +87,42 @@ public final class IOUtils {
     }
 
     public static InputStream getFileAsStream(Path path) {
+        return getFileAsStream(path, GenericIOException::new);
+    }
+
+    public static InputStream getFileAsStream(Path path, Function<Exception, ? extends RuntimeException> exceptionHandler) {
         try {
             return Files.newInputStream(path, StandardOpenOption.READ);
         } catch (IOException e) {
-            throw new GenericIOException(e);
+            throw exceptionHandler.apply(e);
         }
     }
 
     public static void write(Path path, byte[] data) {
+        write(path, data, GenericIOException::new);
+    }
+
+    public static void write(Path path, byte[] data, Function<Exception, ? extends RuntimeException> exceptionHandler) {
         try {
             createDirectoriesIfAbsent(path);
             Files.write(path, data, StandardOpenOption.CREATE);
         } catch (IOException e) {
-            throw new GenericIOException(e);
+            throw exceptionHandler.apply(e);
         }
     }
 
     public static void write(Path path, Consumer<OutputStream> consumer) {
+        write(path, consumer, GenericIOException::new);
+    }
+
+    public static void write(Path path, Consumer<OutputStream> consumer, Function<Exception, ? extends RuntimeException> exceptionHandler) {
         try {
             createDirectoriesIfAbsent(path);
             try (OutputStream outputStream = Files.newOutputStream(path, StandardOpenOption.CREATE)) {
                 consumer.accept(outputStream);
             }
         } catch (Exception e) {
-            throw new GenericIOException(e);
+            throw exceptionHandler.apply(e);
         }
     }
 
