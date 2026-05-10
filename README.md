@@ -28,8 +28,7 @@ implementation 'io.github.hakky54:laleler:1.0.0'
 ## Table of contents
 1. [Introduction](#introduction)
 2. [Usage](#usage)
-4. [Support](#support)
-5. [License](#license)
+3. [Support](#support)
 
 
 # Introduction
