@@ -40,7 +40,7 @@
     <properties>
         <version.junit>5.14.4</version.junit>
         <version.assertj>3.27.7</version.assertj>
-        <version.mockito>5.23.0</version.mockito>
+        <version.mockito>5.24.0</version.mockito>
 
         <version.jacoco-maven-plugin>0.8.15</version.jacoco-maven-plugin>
         <version.maven-surefire-plugin>3.6.0</version.maven-surefire-plugin>
